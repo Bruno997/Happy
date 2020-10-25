@@ -22,7 +22,7 @@ Este app incrível tem como objetivo apresentar os orfanatos cadastrados em dive
 <p> - Ver as instruções via Google Maps; 🗺</P>
 <p> - Procurar diferentes guias e páginas;</P>
 
-<img src="/images/Happy.png" alt="Ir para o mapa" />
+![luan](https://user-images.githubusercontent.com/50916368/97106050-abb0fe00-16bf-11eb-8375-3381ff6fa136.png)
 
 <h2 align="center">Technologies usadas 🚀</h2>
 
