@@ -13,6 +13,17 @@ Happy - visa facilitar visita aos orfanatos mais próximos em Luanda
 <p> Aplicativo desenvolvido na semana do _Dia das Crianças_ promovido pela Aceleração NLW#3 da Rocketseat.
 Este app incrível tem como objetivo apresentar os orfanatos cadastrados em diverças regiões, possibilitando que os usuários possam conhecê-los e levar amor para crianças em situação de vulnerabilidade. <br> Decidi desenvolver para a Angola, onde existe muitos crianças que também merecem muito amor.</p>
 
+<h2 align="center">Funcionalidades 🛠️</h2>
+<p> - Você pode criar e registrar orfanatos;</P>
+<p> - Você pode marcar os dias para visitar orfanatos;</P>
+<p> - Acessando horários de funcionamento e dias</P>
+<p> - Agendar visitas;</P>
+<p> - Entrar em contato com o orfanato via Whatsapp; 📞,</P>
+<p> - Ver as instruções via Google Maps; 🗺</P>
+<p> - Procurar diferentes guias e páginas;</P>
+
+<img src="/images/Happy.png" alt="Ir para o mapa" />
+
 <h2 align="center">Technologies usadas 🚀</h2>
 
 - [Node.js](https://nodejs.org/en/)
@@ -29,6 +40,7 @@ Este app incrível tem como objetivo apresentar os orfanatos cadastrados em dive
 - [Front-end](https://www.notion.so/Front-end-010548f316d04d65a0d8b72865874ed1) ☕
 - [Back-end](https://www.notion.so/Back-end-ff655163e56b4927ae7a7a4e08049e64) 👨‍🍳
 - [Database](https://www.notion.so/Banco-de-Dados-ba70111f89924bda94bb1016f12df8c8) 📦
+
 
 
 <h2 align="center">Como usar </h2>
