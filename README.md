@@ -14,9 +14,9 @@ Happy - visa facilitar visita aos orfanatos mais próximos em Luanda
 Este app incrível tem como objetivo apresentar os orfanatos cadastrados em diverças regiões, possibilitando que os usuários possam conhecê-los e levar amor para crianças em situação de vulnerabilidade. <br> Decidi desenvolver para a Angola, onde existe muitos crianças que também merecem muito amor.</p>
 
 <h2 align="center">Funcionalidades 🛠️</h2>
-<p> - Você pode criar e registrar orfanatos;</P>
-<p> - Você pode marcar os dias para visitar orfanatos;</P>
-<p> - Acessando horários de funcionamento e dias</P>
+<p> - Criar e registrar orfanatos;</P>
+<p> - Marcar os dias para visitar orfanatos;</P>
+<p> - Acessar horários de funcionamento e dias</P>
 <p> - Agendar visitas;</P>
 <p> - Entrar em contato com o orfanato via Whatsapp; 📞,</P>
 <p> - Ver as instruções via Google Maps; 🗺</P>
