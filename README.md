@@ -47,7 +47,7 @@ Este app incrível tem como objetivo apresentar os orfanatos cadastrados em dive
 
    ```
    - Clone this repository:
-   $ git clone https://github.com/Bruno997/Happy.git Happy
+   $ git clone git@github.com:Bruno997/Happy.git Happy
 
    - Enter in directory:
    $ cd Happy
