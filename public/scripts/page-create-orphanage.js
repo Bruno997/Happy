@@ -88,10 +88,11 @@ function deleteField(event) {
 function validate(event) {
 
   //validar se lat e lng estao preenchidos
-  const needsLatAndLng = false;
-  if (needsLatAndLng) {
-     event.preventDefault()
-  alert('Selecione um ponto no mapa')
+  const lat = document.querySelector('[name="lat"]').value
+  const lng = document.querySelector('[name="lng"]').value
+  if (!lat || !lng) {
+    event.preventDefault()
+    alert('Selecione um ponto no mapa')
   }
  
 }

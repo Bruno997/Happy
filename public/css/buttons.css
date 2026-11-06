@@ -49,3 +49,7 @@
 .button-select button:last-child {
   border-radius: 0 2rem 2rem 0;
 }
+a.primary-button {
+  text-decoration: none;
+  font-weight: 800;
+}

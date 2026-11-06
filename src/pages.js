@@ -12,22 +12,23 @@ module.exports = {
         const id = request.query.id
 
         try {
-            const db = await Database; 
-             const results = await db.all(`SELECT * FROM orphanages WHERE id = "${id}"`)
-             const orphanage = results[0]
-        //colocar o orphanage pelo banco
+            const db = await Database;
+            const orphanage = await db.get('SELECT * FROM orphanages WHERE id = ?', [id])
 
-        orphanage.images = orphanage.images.split(",")
-        orphanage.firstImage = orphanage.images[0]
+            // orfanato inexistente
+            if (!orphanage) {
+                return response.status(404).send('Orfanato não encontrado!')
+            }
+
+            orphanage.images = (orphanage.images || '').split(',').filter(Boolean)
+            orphanage.firstImage = orphanage.images[0]
+            orphanage.open_on_weekends = orphanage.open_on_weekends == '1'
 
             return response.render('orphanage', { orphanage })
         } catch (error) {
-
             console.log(error)
             return response.send('Erro no database!')
         }
-        return response.render('orphanage')
-
     },
 
     async orphanages(request, response) {
@@ -51,8 +52,9 @@ module.exports = {
         const fields = request.body;
     
         // validar se os campos estão preenchidos
-        if (Object.values(fields).includes("")) {
-          return response.send("Todos os campos devem ser preenchidos");
+        const required = ["lat", "lng", "name", "about", "whatsapp", "images", "instructions", "opening_hours", "open_on_weekends"];
+        if (required.some((field) => !fields[field] || String(fields[field]).trim() === "")) {
+          return response.status(400).send("Todos os campos devem ser preenchidos");
         }
     
         try {
@@ -64,7 +66,7 @@ module.exports = {
             name: fields.name,
             about: fields.about,
             whatsapp: fields.whatsapp,
-            images: fields.images.toString(),
+            images: [].concat(fields.images).filter(Boolean).toString(),
             instructions: fields.instructions,
             opening_hours: fields.opening_hours,
             open_on_weekends: fields.open_on_weekends,

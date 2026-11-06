@@ -47,7 +47,7 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action="">
+        <form method="POST" action="/save-orphanage" onsubmit="validate(event)">
           <fieldset>
             <legend>Dados</legend>
 
@@ -70,7 +70,7 @@
 
             <div class="input-block">
               <label for="about"
-                >Sobre <span>Máximo de 300 caracteres</span></label>              >
+                >Sobre <span>Máximo de 300 caracteres</span></label>
               <textarea id="about" name="about" required></textarea>
             </div>
 
@@ -116,8 +116,8 @@
             </div>
 
             <div class="input-block">
-              <label for="opening_hour">Horários das visitas</label>
-              <input id="opening_hour" name="opening_hour" required />
+              <label for="opening_hours">Horários das visitas</label>
+              <input id="opening_hours" name="opening_hours" required />
             </div>
 
             <div class="input-block">
