@@ -6,8 +6,13 @@ const option = {
   zoomControl: false
 }
 
+// GET ORPHANAGE COORDINATES
+const mapElement = document.querySelector('#mapid')
+const lat = mapElement.dataset.lat
+const lng = mapElement.dataset.lng
+
 // CREATE MAP
-const map = L.map('mapid', option).setView([-8.8246433,13.3104238], 16)
+const map = L.map('mapid', option).setView([lat, lng], 16)
 
 // CREATE AND ADD TITLELAYER
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map)
@@ -21,7 +26,7 @@ const icon = L.icon({
 })
 
 // CREATE AND ADD MARKER
-L.marker([-8.8246433,13.3104238], { icon })
+L.marker([lat, lng], { icon })
   .addTo(map)
 
 // IMAGE GALLERY

@@ -124,3 +124,9 @@ main {
   border-radius: 20px;
   color: #37C77F;
 }
+
+.open-details .open-on-weekends.not-open {
+  background: linear-gradient(154.16deg, #FDF0F5 7.85%, #FFFFFF 91.03%);
+  border: 1px solid #FFBCD4;
+  color: #FF669D;
+}
